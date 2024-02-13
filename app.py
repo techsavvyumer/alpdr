@@ -15,8 +15,8 @@ import statistics as stats
 # torch.cuda.set_device(0)  # Set to your desired GPU number
 
 # Load YOLO models
-coco_model = YOLO('yolov8n.pt')
-license_plate_detector = YOLO('license_plate_detector.pt')
+coco_model = YOLO('yolo_models/yolov8n.pt')
+license_plate_detector = YOLO('yolo_models/license_plate_detector.pt')
 
 # Load the character recognition model
 model = load_model('updated_tfkmodel.keras')
