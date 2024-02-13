@@ -1,3 +1,4 @@
+easyocr==1.7.0
 filterpy==1.4.5
 scikit-image==0.18.0
 matplotlib==3.8.2
