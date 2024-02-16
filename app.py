@@ -317,6 +317,8 @@ def show_results(char_list, model):
 
 def main():
     st.title("License Plate Detection and Character Recognition")
+    st.write('As a culminating project for the **Data Science and Machine Learning Bootcamp** at **Knowledge Streams**, we, [Umer Mansoor](https://www.linkedin.com/in/techsavvyumer/), [Wajahat Siddique](https://www.linkedin.com/in/wajahatsiddique/), and [Nayab Bashir](https://www.linkedin.com/in/nayabbashir/), under the mentorship of [Dr. Usman Nazir](https://www.linkedin.com/in/unazir/) and [Dr. Sana Jabbar](https://www.linkedin.com/in/sana-jabbar-9802a3252/), embarked on a journey to build a robust LPDR system.')
+    st.write('Through this project, we translated the theoretical and methodological knowledge gained at [Knowledge Streams](https://knowledge.tech/) into a tangible LPDR solution, solidifying our understanding and capabilities.')
 
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
