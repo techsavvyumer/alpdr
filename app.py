@@ -9,13 +9,19 @@ from sort.sort import *
 from tensorflow.keras.models import load_model
 from util import get_car, read_license_plate, write_csv
 import statistics as stats
+import urllib.request
+
+yolov8n_url = 'https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8n.pt'
+yolov8n_path = './yolo_models/yolov8n.pt'
+st.write('Downloading YOLOv8n weights...')
+urllib.request.urlretrieve(yolov8n_url, yolov8n_path)
 
 # Set the GPU device
 # import torch
 # torch.cuda.set_device(0)  # Set to your desired GPU number
 
 # Load YOLO models
-coco_model = YOLO('./yolo_models/yolov8n.pt')
+coco_model = YOLO(yolov8n_path)
 license_plate_detector = YOLO('./yolo_models/license_plate_detector.pt')
 
 # Load the character recognition model
